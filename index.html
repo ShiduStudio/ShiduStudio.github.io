@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>十度工作室</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+	</head>
+	<style>
+		html {
+			font-family: PingFangBold;
+			background-color: #f4f4f5;
+		}
+		
+		@font-face {
+			font-family: PingFangBold;
+			src: url(./font/PingFangBold.ttf);
+		}
+		.panel {
+			width: 80px;
+			height: 100%;
+			box-shadow: 1px 0 7px 0 rgb(0 0 0 / 8%);
+			position: fixed;
+			left: 0;
+			top: 0;
+			background-color: #fff;
+			/* border: 1px solid red; */
+		}
+		.menu {
+			font-size: 12px;
+			text-align: center;
+			margin-top: 18px;
+			margin-bottom: 50px;
+		}
+		.menu a {
+			display: block;
+			text-decoration: none;
+			color: #000;
+			width: 80px;
+			height: 80px;
+		}
+		.menu a:hover {
+			background-color: #f2f5fa;
+		}
+		.content-card {
+			background: #fff;
+			position: relative;
+			top: 20px;
+			left: 40px;
+			width: 90vw;
+			height: 500px;
+			margin: 0 auto;
+			border-radius: 30px;
+			box-shadow: 1px 0 7px 0 rgb(0 0 0 / 8%)
+		}
+		.content-card button:hover {
+			background-color: #7dd2c8;
+		}
+		.content-card-download {
+			background-color: #81d8d0;
+			border: none;
+			border-radius: 50px;
+			color: #fff;
+			width: 120px;
+			height: 50px;
+			position: relative;
+			left: 50px;
+			top: 150px;
+		}
+		.ARR {
+			position: absolute;
+			bottom:0px;
+			left:0px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			width: 100%;
+			font-size: 10px;
+		}
+	</style>
+	<body>
+		<div class="app">
+			<div class="panel">
+				<div style="text-align: center; margin-top: 18px; margin-bottom: 50px;">
+					<img src="img/panel/logo.png" title="十度工作室" width="60px" height="60px">
+				</div>
+				<div class="menu">
+					<a href="index.html" style="color: #3b73f0;">
+						<img src="img/panel/home1.png" style="width: 50px;height: 50px;">
+						<br>
+						<table>首页</table>
+					</a>
+					<a href="download.html">
+						<img src="img/panel/download2.png" style="width: 50px;height: 50px;">
+						<br>
+						<table>下载</table>
+					</a>
+					<a href="about.html">
+						<img src="img/panel/about2.png" style="width: 50px;height: 50px;">
+						<br>
+						<table>关于</table>
+					</a>
+				</div>
+			</div>
+			<div class="content">
+				<p class="ARR">Copyright © 2020 - 2022 Shidu. All Rights Reserved</p>
+				<div class="content-card" id="card">
+					<img src="img/content/ShiduCompact.png" style="width: 500px;height: 500px;text-align: right;border-radius: 30px;float: right;" />
+					<p style="font-size: 36px;position: relative;left: 50px;top: 50px;font-weight: bold;line-height: 50px;">ShiduCompact<br>等你来使用</p>
+					<p style="font-size: 20px;position: relative;left: 50px;top: 40px;">使用 Windows 10/11 API 透明地压缩游戏和程序。</p>
+					<p style="font-size: 16px;position: relative;left: 50px;top: 100px;color: #9195a1;line-height: 30px;">透明地压缩您的游戏和程序，减少它们使用的空间，而不会影响它们的功能。<br>直接与 Win32 API 一起工作，效率更高。</p>
+					<button class="content-card-download" onclick="window.location.href='download/ShiduCompact-1.0.0.exe'">下载</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
